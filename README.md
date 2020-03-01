@@ -1,27 +1,18 @@
-# NgCompleteGuideUpdate
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Database Setup
+1. Create a database in firebase.
+2. From database dropdown choose: "Realtime database" among "cloud firestore" and "realtime database"
+3. Make as below for read and write authorization
+    ```json
+    {
+    /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+    "rules": {
+        ".read": true,
+        ".write": true
+    }
+    }
+    ```
