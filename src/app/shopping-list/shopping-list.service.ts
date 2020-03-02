@@ -1,6 +1,10 @@
 import { Ingredient } from '../shared/ingredient.model';
 import { Subject } from 'rxjs';
+import { Injectable } from "@angular/core";
 
+// @Injectable() got automatically
+// added while upgrading cli version from 8 to 9
+@Injectable()
 export class ShoppingListService {
   ingredientsChanged = new Subject<Ingredient[]>();
   startedEditing = new Subject<number>();
