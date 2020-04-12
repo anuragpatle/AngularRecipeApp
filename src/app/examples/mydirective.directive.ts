@@ -8,7 +8,7 @@ export class MydirectiveDirective implements OnInit {
   constructor(private elRef: ElementRef, private renderer: Renderer2) { }
 
   ngOnInit(): void {
-    //this.
+    this.renderer.setStyle(this.elRef.nativeElement, 'background-color', 'pink');
   }
 
 }
