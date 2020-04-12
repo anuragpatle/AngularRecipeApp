@@ -19,8 +19,7 @@ export class ShoppingEditComponent implements OnInit, OnDestroy {
 
   // Before updating angular cli from 8 to 9
   // below line was as:
-  // @ViewChild('f', { static: false }) slForm: NgForm;
-  @ViewChild('f') slForm: NgForm;
+  @ViewChild('f', { static: false }) slForm: NgForm;
   subscription: Subscription;
   editMode = false;
   editedItemIndex: number;
