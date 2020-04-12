@@ -1,0 +1,14 @@
+<ul>
+    <li><a (click)="onClickExampleOptions('directiveExample')">Show Directive Example</a></li>
+</ul>
+
+
+
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <div *ngIf="selectedExampleType === 'directiveExample'">
+            {{selectedExampleType}}
+        </div>
+    </div>
+</div>

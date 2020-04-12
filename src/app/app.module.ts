@@ -19,6 +19,8 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
 import { RecipeService } from './recipes/recipe.service';
 import { AuthComponent } from './auth/auth.component';
 import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
+import { ExamplesComponent } from './examples/examples/examples.component';
+import { MydirectiveDirective } from './examples/mydirective.directive';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinne
     RecipeStartComponent,
     RecipeEditComponent,
     AuthComponent,
-    LoadingSpinnerComponent
+    LoadingSpinnerComponent,
+    ExamplesComponent,
+    MydirectiveDirective
   ],
   imports: [
     BrowserModule,
