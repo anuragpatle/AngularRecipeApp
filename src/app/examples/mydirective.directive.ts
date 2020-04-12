@@ -11,8 +11,9 @@ export class MydirectiveDirective implements OnInit {
     //this.renderer.setStyle(this.elRef.nativeElement, 'background-color', 'pink');
   }
 
+  defaultColor = 'transparent';
 
-  @HostBinding('style.backgroundColor') backgroundColor: string = 'transparent';
+  @HostBinding('style.backgroundColor') backgroundColor: string = this.defaultColor;
 
   @HostListener('mouseenter') mouseover(eventData: Event) {
     this.renderer.setStyle(this.elRef.nativeElement, 'background-color', 'blue');
